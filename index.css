@@ -146,6 +146,11 @@ ul li a {
     top: 100%;
     visibility: visible;
 }
+.Main-nav-links>ul>li:hover .header{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
 
 .Main-nav-links {
     width: 40%;
@@ -615,3 +620,167 @@ a:hover {
     color: grey;
     font-weight: 200;
 }
+
+/* products page design  */
+
+.products-header{
+   /* margin-left: 350px; */
+   text-align: center;
+}
+.products-p{
+    margin-top: 15px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 200px
+    ;
+    color: gray;
+}
+.products-header h2{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.products-header button{
+    margin-right: 15px;
+    padding: 10px 10px 13px 10px;
+    color: rgb(90, 89, 89);
+    background-color: white;
+    border: 1px solid gray;
+}
+
+/* .products page shoes design  */
+
+.Product-body{
+    width: 80%;
+    margin: auto;
+    /* margin-left: 250px; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.Product-body >div{
+    /* border: 1px solid red;   */
+    border-bottom: 1px solid rgb(200, 199, 199);
+}
+
+.Product-body >div >h2{
+    font-family: sans-serif;
+    font-weight: 300;  
+}
+
+.Product-body >div > div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.Product-body >div > div > p{
+    font-size: 18px; 
+    color: grey; 
+}
+.Product-body >div > div > h4{
+    font-size: 23px; 
+    font-weight: 100;  
+}
+
+
+/* single product page design  */
+
+.cont{
+    border: 3px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    height: 500px;
+}
+
+.left{
+    border: 1px solid red;
+    width: 40%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 190px;
+    margin-top: -380px;
+}
+.left img{
+    width: 100%;
+}
+.leftOne{
+    display: flex;
+    flex-direction: column;
+}
+.leftOne img{
+    
+    border: 2px solid darkcyan;
+    width: 100px;
+}
+
+.right{
+    border: 1px solid red;
+    margin-left: 900px;
+    margin-top: -400px;
+    width: 25%;
+    
+}
+
+.right-size{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    
+}
+.right-size button{
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.right-head h2{
+    font-size: 25px;
+}
+.right-sec i{
+    color: rgb(227, 226, 226);
+}
+.proColor{
+    margin-bottom: 30px;
+}
+.size{
+    margin-bottom: 20px;
+}
+
+.addToCart{
+    margin-left: 950px;
+    margin-top: 30px;
+}
+.addToCart button{
+    padding: 10px 65px;
+    color: white;
+    background-color: #0579D0;
+    border: none;
+    border-radius: 4px;
+}
+.addToCart button:hover{
+    background-color: grey;
+}
+
+.product-Details{
+    margin-top: 130px;
+    border: 1px solid royalblue;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.product-Details{
+  width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="checkout">
+        <img src="./logo shoozie.png" alt="">
+    </div>
+
+    <hr>
+
+    <div class="Details">
+         <div>
+            <h1>My Details</h1>
+          
+            <p>First Name</p>
+            <input type="text" placeholder="First Name">
+            <p>Last Name</p>
+            <input type="text" placeholder="Last Name">
+            <p>Contact Number</p>
+            <input type="number" placeholder="Mobile Number">
+
+            <h2>Delivery Address</h2>
+
+            <p>Address</p>
+            <input type="text" placeholder="Enter complete address">
+            <p>Apt/Unit/Office</p>
+            <input type="text">
+            <p>City</p>
+            <input type="text" placeholder="Your City">
+            <p>Zip</p>
+            <input type="number">
+            <p>State</p>
+            <input type="text" placeholder="Enter Your State">
+         </div>
+    </div>
+
+    <div class="confirm">
+        <a href="./index.html">
+        <button class="ccandpay">Confirm and Pay</button>
+    </a>
+    </div>
+</body>
+</html>
+
+<script>
+    let confirmed = document.querySelector(".ccandpay")
+
+    confirmed.addEventListener("click", ()=>{
+        alert("Thank You, Your Order Has Been Successfully Placed")
+    })
+</script>

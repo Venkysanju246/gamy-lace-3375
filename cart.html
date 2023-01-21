@@ -5,21 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details </title>
+    <title>Cart</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     <link rel="stylesheet" href="index.css">
-
-<style>
-    .search #mycart:hover{
-        color: aqua;
-    }
-</style>
-
 </head>
 
 <body>
-
 
     <div class="Top-skin">
         <div class="Top-skin-1">
@@ -56,14 +50,18 @@
         </ul>
     </div>
 
+    <!-- done seocnd nav menu -->
+
     <div class="main-nav">
         <div class="openMenu"><i class="fa fa-bars"></i></div>
 
         <div class="actual">
 
             <a href="./index.html">
-            <img src="./logo shoozie.png" alt="Shoozie logo">
-        </a>
+
+
+                <img src="./logo shoozie.png" alt="Shoozie logo">
+            </a>
         </div>
         <div class="Main-nav-links">
             <ul>
@@ -152,12 +150,11 @@
             <a href="#" class="serachbtn">
                 <i class="fa fa-search fa-2x" aria-hidden="true"></i>
             </a>
-            
-            <a id="mycart" href="./cart.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="count"></span></a>
+            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
         </div>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
     </div>
-    <a href=""></a>
+
 
     <div class="cus-note">
         <div class="one">
@@ -181,181 +178,105 @@
         </div>
     </div>
 
-    <div class="cont">
 
-        <div class="leftOne">
+    <div class="Main-cart">
+        <div class="cart-one">
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26171018_W_1?fmt=webp" alt="">
+        </div>
+        <div class="cart-two">
+            <h4>Nalla Lace</h4>
+            <p>Camel Nubuck</p>
+            <p>Size 11, Medium</p>
 
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26170132_W_2?wid=180&hei=180&fmt=webp" alt="">
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26170132_W_4?wid=180&hei=180&fmt=webp" alt="">
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26170132_W_6?wid=180&hei=180&fmt=webp" alt="">
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26170132_W_3?wid=180&hei=180&fmt=webp" alt="">
+            <div class="quantity-btns">
+                <button id="decrement">-</button>
+                <button><span id="quantity">1</span></button>
+                <button id="increment">+</button> <br>
+                <a href="./Remove.html">Remove</a>
+            </div>
 
-
+            <div id="price">
+     <p class="og-price"></p>
+            </div>
         </div>
 
-        <div class="left">
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26170132_W_1?fmt=webp&wid=260" alt="">
-        </div>
+       
+
 
     </div>
 
-    <div class="right">
-
-        <div class="right-head">
-            <h2>Desert Trek Amber Nubuck</h2>
-            <p>$150.00</p>
+    <div class="cart-left">
+        <div class="subtotal">
+            <h6>Subtotal </h6>
         </div>
-        <div class="right-sec">
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-        </div>
-        <br>
-        <p class="proColor">COLOR: Amber Nubuck</p>
-
-        <p class="size">Select size</p>
-        <div class="right-size">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-        </div>
-
+        <p><span class="price-cal">$ 180</span></p>
+        
     </div>
 
-    <div class="addToCart">
-        <button class="Addtocart-btn">Add To Shopping Bag</button>
-    </div>
-
-    <div class="product-Details">
-        <div>
-
-            <h2 class="pro-des">Product Description</h2>
-
-            <p>
-                Our icon of 50 years returns in a rich amber hue ready for lighter summer wear. Premium suede <br>
-                uppers contrast perfectly with its natural crepe sole, while flat laces and our classic fobs lend a <br>
-                casual finish.
-            </p>
-
-            <div>
-
-                <ul style="list-style-type:disc;">
-                    <li> . Premium amber suede upper</li> <br>
-                    <li>. Natural rubber crepe sole</li> <br>
-                    <li>. Finished with two Clarks Originals fobs</li>
-                </ul>
-            </div>
+    <div class="cart-left-tax">
+        <div class="taxes">
+            <h6>Taxes </h6>
         </div>
-
-        <div>
-            <h1 class="table">Delivery & returns</h2>
-            <table>
-                <tr>
-                    <td>
-                        <h3>FREE</h2>
-                    </td>
-                    &nbsp;
-                    <td>
-                        <p>(on $50+) FedEx SmartPost Delivery <br> (Within 7-10 business days)*</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>$8.95</h2>
-                    </td>
-                    <td>
-                        <p>FedEx Ground Delivery (Within <br> 3-6 business days)*</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>$18.00</h2>
-                    </td>
-                    <td>
-                        <p>FedEx 2 Day Delivery (Within 2 business <br> days. Order before 2pm EST)*</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>$20.00</h2>
-                    </td>
-                    <td>
-                        <p>USPS Delivery (Within 8-12 business days. <br> Available for APO/FPO and US Territory <br>
-                            addresses only)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>FREE</h2>
-                    </td>
-                    <td>Returns on all items</td>
-                </tr>
-            </table>
-
+        <p><span class="price-tax">$ 0.00</span></p>
+        
+    </div>
+    
+    <div class="Estimated">
+        <div class="total">
+            <h6>Estimated total </h6>
+        </div>
+        <p><span class="price-tot">$ 180</span></p>
+        
+    </div>
+    <div class="promo">
+       <p>
+        Enter Your Promo Code and Click Apply</p>
+        <div class="promo-inp">
+           <input type="text">
+           <button>Apply</button>
         </div>
     </div>
 
-
-    <div class="footer">
-        <div class="top">
-            <h5>DEPARTMENTS</h5>
-            <h5>HELP</h5>
-            <h5>ABOUT SHOOZIE </h5>
-            <h5>SHOOZIE.COM</h5>
-        </div>
-        <hr>
-        <div class="footer-names">
-            <div class="first">
-                <h6>Womens</h6>
-                <h6> Mens</h6>
-                <h6> Originals</h6>
-                <h6>Discover</h6>
-                <h6>Sale</h6>
-
-
-
-            </div>
-            <div class="second">
-                <h6>Product Recall</h6>
-                <h6>Customer Service</h6>
-                <h6>Shipping & Delivery</h6>
-                <h6>Order Lookup</h6>
-                <h6>Returns</h6>
-                <h6>Compare At Pricing</h6>
-                <h6>FAQ's</h6>
-                <h6>Shoe Care Guide</h6>
-
-            </div>
-            <div class="third">
-                <h6>About Us</h6>
-                <h6>Accessibility</h6>
-                <h6>Affiliate Program</h6>
-                <h6>Blog</h6>
-                <h6>Careers</h6>
-                <h6>Teachnologies</h6>
-            </div>
-            <div class="four">
-                <h6>Gift cards</h6>
-                <h6>Gift Card Balaace</h6>
-                <h6>Size Guide</h6>
-            </div>
-
-        </div>
+    <div class="proceedTo">
+        <a href="./checkout.html">
+           <button>Proceed To Checkout</button>
+        </a>
     </div>
 
 </body>
 
 </html>
 
-<script src="./index.js"></script>
+<!-- <script src="./index.js"></script> -->
+
+<script>
+    let ogprice = document.querySelector(".og-price")
+    let decrement = document.getElementById("decrement")
+    let quantity = document.getElementById("quantity")
+    let increment = document.getElementById("increment")
+  let spanPrice = document.querySelector(".price-cal")
+  let EstimatedTotal = document.querySelector(".price-tot")
+
+    increment.addEventListener("click", () => {
+        if (quantity.textContent < 5) {
+            quantity.textContent++
+        } else {
+            alert(" Sorry, maximum quantity limit is 5 for this product")
+        }
+        spanPrice.textContent = `$ ${180 * quantity.textContent}`
+        EstimatedTotal.textContent = `$ ${180 * quantity.textContent}`
+    })
+
+    decrement.addEventListener("click", () => {
+        if (quantity.textContent <= 1) {
+            alert("Sorry minimum quantity is 1")
+        } else {
+            quantity.textContent--
+        }
+        spanPrice.textContent = `$ ${180 * quantity.textContent}`
+        EstimatedTotal.textContent = `$ ${180 * quantity.textContent}`
+    })
+    ogprice.textContent = `$ ${Number(180)}`
+    
+
+</script>

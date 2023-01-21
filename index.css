@@ -98,7 +98,7 @@ ul li a {
     align-items: center;
 }
 
-.actual>img {
+.actual a img {
 
     width: 120px;
     margin-left: -20px;
@@ -692,7 +692,7 @@ a:hover {
 /* single product page design  */
 
 .cont{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 90%;
     margin: auto;
     margin-top: 40px;
@@ -700,7 +700,7 @@ a:hover {
 }
 
 .left{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
     /* height: 200px; */
     display: flex;
@@ -718,12 +718,12 @@ a:hover {
 }
 .leftOne img{
     
-    border: 2px solid darkcyan;
+    /* border: 2px solid darkcyan; */
     width: 100px;
 }
 
 .right{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 900px;
     margin-top: -400px;
     width: 25%;
@@ -772,15 +772,251 @@ a:hover {
 
 .product-Details{
     margin-top: 130px;
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
+    padding: 20px;
 }
 
 .product-Details{
   width: 90%;
     display: flex;
     justify-content: space-between;
+    background-color: #F3F3F3;
+}
+.pro-des{
+    font-size: 23px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: rgb(61, 61, 61);
+}
+.table{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: rgb(20, 20, 20);
+}
+table tr td h3{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+table tr td p{
+    margin-bottom: 20px;
+}
+.count{
+   transition: 10s;
 }
 
+.Main-cart{
+    display: flex;
+}
+
+.cart-two{
+  text-align: center;
+  margin-top: 170px;
+  margin-left: 50px;
+}
+.cart-two h4{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 7px;
+
+}
+.cart-two p {
+    font-size: 18px;
+   
+}
+.quantity-btns {
+    margin-top: 8px;
+   
+    
+}
+.quantity-btns button{
+    padding: 10px 13px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#price{
+  
+    margin-left: 300px;
+    margin-top: -150px;
+}
+
+.cart-left{
+    display: flex;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid gray;
+    margin-left: 940px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: -240px;
+    font-size: 30px;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+
+.cart-left p{
+    font-size: 20px;
+}
+.cart-left-tax{
+    display: flex;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid gray;
+    margin-left: 940px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+margin-top: 20px;
+    /* margin-top: -40px; */
+    font-size: 30px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.cart-left-tax p{
+    font-size: 20px;
+}
+
+
+.Estimated{
+    display: flex;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid gray;
+    margin-left: 940px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    /* margin-top: -240px; */
+    margin-top: 30px;
+    font-size: 30px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.Estimated p{
+    font-size: 20px;
+}
+
+.promo {
+    margin-left: 940px;
+    margin-top: 30px;
+   
+}
+.promo p{
+    margin-bottom: 15px;
+}
+.promo input{
+    padding: 3px 15px 3px 13px;
+    margin-right: 20px;
+}
+.promo button{
+    padding: 3px 15px 3px 13px;
+}
+
+.proceedTo{
+    margin-left: 940px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.proceedTo button{
+    padding: 7px 50px;
+    background-color: #0579D0;
+    font-size: 18px;
+    color: white;
+    border: 1px solid grey;
+}
+.proceedTo button:hover{
+    padding: 7px 50px;
+    background-color: grey;
+    font-size: 18px;
+    color: white;
+    border: 1px solid grey;
+}
+
+.checkout{
+   display: block;
+   text-align: center;
+}
+
+.Details{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.Details input{
+    margin-bottom: 10px;
+    padding: 7px 80px;
+}
+
+.Details h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.Details h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+   
+}
+.confirm button{
+    padding: 8px 40px;
+    background-color: #0579D0;
+    border: 1px solid grey;
+    font-size: 17px;
+}
+.confirm button:hover{
+    padding: 9px 60px;
+    background-color: grey;
+}
+
+/* search functionlty  */
+
+
+.onlySearch{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.serachText{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: 1px solid grey;
+    transition: all 0.2s linear;
+
+}
+
+.serachText:focus{
+    outline: none;
+}
+.serachbtn{
+width: 5rem;
+height: 5rem;
+position: absolute  ;
+right: 0rem;
+display: grid;
+place-items: center;
+}

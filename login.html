@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="loginBody">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+
+    <a href="./index.html" class="Logo-login">
+        Shoozie
+    </a>
+
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input  type="text" placeholder="Email or Phone" id="username" required>
+
+        <label for="password">Password</label>
+        <input class="password" type="password" placeholder="Password" id="password" required>
+
+        <a href="./index.html">
+            <input type="submit" class="logIn" value="Log in">
+        </a>
+
+        <a href="#" class="newUser">Dare 2 touch</a> <br>
+
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+    let usernameinp = document.getElementById("username")
+    let passwordinp = document.getElementById("password")
+    // let loginbtn = document.querySelector("logIn")
+let fromEl = document.querySelector("form")
+
+
+fromEl.addEventListener("submit", (e)=>{
+    e.preventDefault()
+   console.log(1)
+if(usernameinp.value == "abc@gmail.com"  && passwordinp.value == 123){
+    alert("Login Success")
+    let Home = "http://127.0.0.1:5500/index.html"
+    window.open(Home)
+}else {
+    alert("Wrong Credentials")
+}
+})
+</script>
